@@ -1,3 +1,3 @@
 export default function PrinciplesPage() {
-  return <div>How It works</div>;
+  return <p>How It works</p>;
 }

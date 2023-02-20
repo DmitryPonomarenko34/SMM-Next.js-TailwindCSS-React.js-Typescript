@@ -11,7 +11,7 @@ export default function NavList() {
   };
 
   return (
-    <nav>
+    <nav className="flex-auto">
       <ul className="flex">
         <li className="mr-2 last:mr-0">
           <Link

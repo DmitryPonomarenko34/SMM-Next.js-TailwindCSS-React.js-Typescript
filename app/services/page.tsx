@@ -1,3 +1,3 @@
 export default function ServicesPage() {
-  return <div className="">Services</div>;
+  return <p className="">Services</p>;
 }

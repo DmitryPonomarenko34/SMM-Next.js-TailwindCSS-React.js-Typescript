@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className={`${nunitoSans.className} font-normal text-lg`}>
+      <body className={nunitoSans.className}>
         <Providers>
           <Header />
           <main className={`custom-container mx-auto px-3 text-zinc-900`}>

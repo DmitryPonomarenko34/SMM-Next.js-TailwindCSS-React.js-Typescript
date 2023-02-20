@@ -5,16 +5,18 @@ import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 export default function ThemeBtn() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
-  const forceTheme = theme === "dark" ? "light" : "dark";
+  const { theme, setTheme, systemTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
+    if (systemTheme) setTheme(systemTheme);
   }, []);
 
   if (!mounted) {
     return null;
   }
+
+  const forceTheme = theme === "dark" ? "light" : "dark";
 
   return (
     <button className="w-6 h-6" onClick={() => setTheme(forceTheme)}>

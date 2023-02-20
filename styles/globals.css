@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply font-normal text-sm text-zinc-900 dark:text-zinc-300;
+  }
+
+  p {
+    @apply text-gray-500 text-lg;
+  }
+}
 
 .nav-link {
-  @apply text-base hover:text-orange-400 dark:text-orange-300;
+  @apply text-base hover:text-orange-400;
 }
 
 .active-link {
