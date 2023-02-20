@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavList from "./NavList";
+import ThemeBtn from "./ThemeBtn";
 
 export default function Header() {
   return (
@@ -10,6 +11,7 @@ export default function Header() {
           <Image src="/logo.svg" alt="logo" width={72} height={20} />
         </Link>
         <NavList />
+        <ThemeBtn />
       </div>
     </header>
   );
