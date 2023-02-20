@@ -1,6 +1,6 @@
 export type Category =
   | "Services"
   | "Reviews"
-  | "How it works"
+  | "How It Works"
   | "Benefits"
   | "FAQ";
