@@ -10,22 +10,30 @@
   p {
     @apply text-gray-500 text-lg;
   }
-}
 
-.nav-link {
-  @apply text-base hover:text-orange-400;
-}
+  .menu {
+    @apply hidden sm:flex;
+  }
 
-.active-link {
-  @apply text-orange-400 pointer-events-none;
-}
+  .menu.active {
+    @apply block;
+  }
 
-.nav-item {
-  @apply mr-4 last:mr-0;
-}
+  .nav-link {
+    @apply text-base hover:text-orange-400;
+  }
 
-.custom-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  .active-link {
+    @apply text-orange-400 pointer-events-none;
+  }
+
+  .nav-item {
+    @apply mr-4 last:mr-0;
+  }
+
+  .custom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
 }

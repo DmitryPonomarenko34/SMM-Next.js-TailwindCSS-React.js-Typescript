@@ -1,18 +1,26 @@
 "use client";
-import { category } from "@/constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Bars3Icon } from "@heroicons/react/24/solid";
+import { useState } from "react";
 
 export default function NavList() {
   const pathname = usePathname();
+  const [isActiveMenu, toggleMenu] = useState(false);
 
   const isActive = (path: string) => {
     return pathname?.split("/").pop() === path;
   };
 
   return (
-    <nav className="flex-auto">
-      <ul className="flex">
+    <nav className="order-first sm:order-none sm:flex-auto">
+      <button
+        className="block sm:hidden"
+        onClick={() => toggleMenu(!isActiveMenu)}
+      >
+        <Bars3Icon color="dark:text-zinc-300" width={24} height={24} />
+      </button>
+      <ul className={`menu ${isActiveMenu && "active"}`}>
         <li className="mr-2 last:mr-0">
           <Link
             href={"/services"}

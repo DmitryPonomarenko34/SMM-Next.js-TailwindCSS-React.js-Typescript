@@ -20,9 +20,9 @@ export default function ThemeBtn() {
   return (
     <button className="w-6 h-6" onClick={() => setTheme(forceTheme)}>
       {resolvedTheme === "dark" ? (
-        <SunIcon title="light" />
+        <SunIcon title="light theme" />
       ) : (
-        <MoonIcon title="dark" />
+        <MoonIcon title="dark theme" />
       )}
     </button>
   );
