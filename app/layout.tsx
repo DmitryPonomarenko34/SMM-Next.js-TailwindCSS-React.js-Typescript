@@ -20,9 +20,7 @@ export default function RootLayout({
       <body className={nunitoSans.className}>
         <Providers>
           <Header />
-          <main className={`custom-container mx-auto px-3 text-zinc-900`}>
-            {children}
-          </main>
+          <main className="pt-[7.5rem]">{children}</main>
         </Providers>
       </body>
     </html>
