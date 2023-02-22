@@ -24,7 +24,7 @@
   }
 
   .active-link {
-    @apply bg-orange-400 sm:bg-transparent pointer-events-none;
+    @apply bg-orange-400 sm:text-orange-400 sm:dark:text-orange-400 sm:bg-transparent pointer-events-none;
   }
 
   .nav-item {
