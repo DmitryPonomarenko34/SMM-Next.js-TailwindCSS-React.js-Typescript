@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bars3Icon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 
 export default function NavList() {
@@ -18,10 +18,22 @@ export default function NavList() {
         className="block sm:hidden"
         onClick={() => toggleMenu(!isActiveMenu)}
       >
-        <Bars3Icon color="dark:text-zinc-300" width={24} height={24} />
+        {isActiveMenu ? (
+          <XMarkIcon color="dark:text-zinc-300" width={24} height={24} />
+        ) : (
+          <Bars3Icon color="dark:text-zinc-300" width={24} height={24} />
+        )}
       </button>
       <ul className={`menu ${isActiveMenu && "active"}`}>
-        <li className="mr-2 last:mr-0">
+        <li className="nav-item">
+          <Link
+            href={""}
+            className={`nav-link ${isActive("") && "active-link"}`}
+          >
+            Home
+          </Link>
+        </li>
+        <li className="nav-item">
           <Link
             href={"/services"}
             className={`nav-link ${isActive("services") && "active-link"}`}

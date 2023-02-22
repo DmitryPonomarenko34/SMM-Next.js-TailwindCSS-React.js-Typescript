@@ -12,23 +12,23 @@
   }
 
   .menu {
-    @apply hidden sm:flex;
+    @apply -translate-y-[50rem] transition-transform absolute w-full left-0 top-24 p-4 bg-zinc-800 sm:p-0 sm:static sm:bg-transparent sm:translate-y-0 sm:flex sm:transition-none;
   }
 
   .menu.active {
-    @apply block;
+    @apply translate-y-0;
   }
 
   .nav-link {
-    @apply text-base hover:text-orange-400;
+    @apply text-base p-2 rounded-sm hover:bg-orange-400 text-zinc-200 dark:text-zinc-200 w-full block sm:hover:bg-transparent sm:rounded-none sm:hover:text-orange-400 sm:p-0 sm:w-auto sm:text-zinc-900;
   }
 
   .active-link {
-    @apply text-orange-400 pointer-events-none;
+    @apply bg-orange-400 sm:bg-transparent pointer-events-none;
   }
 
   .nav-item {
-    @apply mr-4 last:mr-0;
+    @apply mb-2 sm:mb-0 sm:mr-4 last:mr-0;
   }
 
   .custom-container {
