@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+// @ts-ignore
 import { usePathname } from "next/navigation";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
@@ -63,14 +64,6 @@ export default function NavList() {
             className={`nav-link ${isActive("faq") && "active-link"}`}
           >
             FAQ
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            href="/users"
-            className={`nav-link ${isActive("users") && "active-link"}`}
-          >
-            Users
           </Link>
         </li>
       </ul>

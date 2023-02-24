@@ -12,7 +12,7 @@ export default function FirstSection() {
     <section className="bg-zinc-100 dark:bg-zinc-800 -mt-[7.5rem] pt-[7.5rem] h-screen">
       <div className="flex flex-col justify-center items-center h-full custom-container relative">
         <Image
-          className="hidden absolute max-w-full max-h-full -z-10 sm:block"
+          className="hidden absolute max-w-full max-h-full z-0 sm:block"
           src="/home-bg-social.png"
           width={1147}
           height={710}
