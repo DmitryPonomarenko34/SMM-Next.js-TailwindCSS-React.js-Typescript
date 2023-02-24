@@ -27,15 +27,7 @@ export default function NavList() {
       <ul className={`menu ${isActiveMenu && "active"}`}>
         <li className="nav-item">
           <Link
-            href={""}
-            className={`nav-link ${isActive("") && "active-link"}`}
-          >
-            Home
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            href={"/services"}
+            href="/services"
             className={`nav-link ${isActive("services") && "active-link"}`}
           >
             Services
@@ -43,7 +35,7 @@ export default function NavList() {
         </li>
         <li className="nav-item">
           <Link
-            href={"/reviews"}
+            href="/reviews"
             className={`nav-link ${isActive("reviews") && "active-link"}`}
           >
             Reviews
@@ -51,7 +43,7 @@ export default function NavList() {
         </li>
         <li className="nav-item">
           <Link
-            href={"/principles"}
+            href="/principles"
             className={`nav-link ${isActive("principles") && "active-link"}`}
           >
             How It Works
@@ -59,7 +51,7 @@ export default function NavList() {
         </li>
         <li className="nav-item">
           <Link
-            href={"/benefits"}
+            href="/benefits"
             className={`nav-link ${isActive("benefits") && "active-link"}`}
           >
             Benefits
@@ -67,10 +59,18 @@ export default function NavList() {
         </li>
         <li className="nav-item">
           <Link
-            href={"/faq"}
+            href="/faq"
             className={`nav-link ${isActive("faq") && "active-link"}`}
           >
             FAQ
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            href="/users"
+            className={`nav-link ${isActive("users") && "active-link"}`}
+          >
+            Users
           </Link>
         </li>
       </ul>

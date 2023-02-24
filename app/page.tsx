@@ -1,6 +1,6 @@
 import FirtsSection from "./FirstSection";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <FirtsSection />
