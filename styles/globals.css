@@ -40,4 +40,8 @@
   .second-link {
     @apply bg-orange-400 w-full block text-center rounded-2xl shadow-lg py-4 px-8 font-semibold sm:w-auto text-white;
   }
+
+  .title {
+    @apply font-unbounded font-semibold text-2xl max-w-md sm:max-w-xl text-center mx-auto sm:text-4xl mb-6 order-1 relative;
+  }
 }

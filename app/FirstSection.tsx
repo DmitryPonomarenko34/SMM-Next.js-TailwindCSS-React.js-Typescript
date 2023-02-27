@@ -1,12 +1,6 @@
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import { Unbounded } from "@next/font/google";
 import Link from "next/link";
-
-const unbonced = Unbounded({
-  weight: "600",
-  subsets: ["latin"],
-});
 
 export default function FirstSection() {
   return (
@@ -22,9 +16,7 @@ export default function FirstSection() {
           alt="decor img"
           aria-hidden
         />
-        <h1
-          className={`${unbonced.className} text-2xl max-w-md sm:max-w-xl text-center	mx-auto font-semibold sm:text-4xl mb-6 order-1 relative`}
-        >
+        <h1 className="title">
           Promotion in{" "}
           <span className="text-orange-400">all social networks</span> in a
           couple of clicks
