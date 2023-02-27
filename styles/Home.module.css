@@ -1,0 +1,16 @@
+.first::before,
+.first::after {
+  content: '';
+  position: absolute;
+  @apply bg-no-repeat -z-10;
+}
+
+.first::before {
+  background-image: url('/decor-bg-dots.svg');
+  @apply w-36 h-16 bg-cover -bottom-6 left-2/4 -translate-x-2/4;
+}
+
+.first::after {
+  background-image: url('/decor-bg-waves.svg');
+  @apply w-full h-full left-0 top-0 bg-cover;
+}

@@ -1,3 +1,4 @@
+import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import { Unbounded } from "@next/font/google";
 import Link from "next/link";
@@ -9,7 +10,9 @@ const unbonced = Unbounded({
 
 export default function FirstSection() {
   return (
-    <section className="bg-zinc-100 dark:bg-zinc-800 -mt-[7.5rem] pt-[7.5rem] h-screen">
+    <section
+      className={`${styles.first} bg-zinc-100 dark:bg-zinc-800 -mt-[7.5rem] pt-[7.5rem] h-screen relative overflow-y-hidden z-0`}
+    >
       <div className="flex flex-col justify-center items-center h-full custom-container relative">
         <Image
           className="hidden absolute max-w-full max-h-full z-0 sm:block"
